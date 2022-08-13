@@ -53,6 +53,15 @@
 
 /* Hide header and footer in print */
 @media print {
+    .header-left-content .photo {
+        height: 150px;
+        width: 150px;
+    }
+
+    .header-left-content h2 {
+        margin-top: 5px;
+    }
+
     @page {
         margin: 0 0.5in;
     }
