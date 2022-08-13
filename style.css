@@ -1,20 +1,33 @@
-.main-content {
-    font-size: 1.15rem;
-    text-align: justify;
+.header-container {
+    padding-top: 3rem;
 }
 
-.sidebar-content {
+.photo {
+    border-radius: 50%;
+    filter: brightness(120%);
+}
+
+.header-right-container {
+    padding-top: 4rem;
+}
+
+.header-right-content {
     color: black;
     font-size: 1rem;
 }
 
-.sidebar-content li a {
+.header-right-content li a {
     color: black;
     text-decoration: none;
 }
 
-.sidebar-content li a:hover {
+.header-right-content li a:hover {
     color: gray;
+}
+
+.main-content {
+    font-size: 1.15rem;
+    text-align: justify;
 }
 
 .border-left {
@@ -22,11 +35,21 @@
     padding-left: 30px;
 }
 
-/* Enable to print like view without header and footer */
-/*
-@page {margin:0 -6cm}
-html {margin:0 6cm}
-*/
+@media (min-width:768px) {
+    .container {
+        padding: 0 7%;
+    }
+}
+
+@media (max-width:768px) {
+    .header-left-content {
+        text-align: center;
+    }
+
+    .header-right-container {
+        padding-top: 0;
+    }
+}
 
 /* Hide header and footer in print */
 @media print {
